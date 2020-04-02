@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 50px;
+  padding-top: 50px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: lighter;
+  font-size: 8.625rem;
+  color: #3b6978;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #3b6978;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.top {
+  text-align: left;
+  position: relative;
+  background-color: #cff1ef;
+  height: 100vh;
+  padding: 200px 10px;
+  padding-bottom: 0;
+}
+
+.top p {
+  color: #3b6978;
+  font-size: 2rem;
+  margin: 0 15rem;
+}
+
+.top h1, .top p {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+}
+
+.top img {
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle .profile {
+  width: 60%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: auto;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.middle .profile img {
+  margin: 10px 100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.middle .profile p {
+  font-size: large;
+  width: 50%;
+}
+
+.skills {
+  width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px auto;
+}
+
+.skills img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 100px;
+}
+
+.skill-row {
+  height: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-row h2 {
+  width: 100%;
+  margin-left: 50%;
+}
+
+.skill-row h3, .skill-row p {
+  margin-left: 50px;
+  color: #3b6978;
+  text-align: left;
+  width: 50%;
+  font-size: large;
+}
+
+.contact-me {
+  width: 100%;
+}
+
+.contact-me a {
+  border: 1px solid #3b6978;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: #204051;
+  text-decoration: none;
+  color: #cae8d5;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Alegreya Sans', sans-serif;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.contact-me a:hover {
+  background-color: #cae8d5;
+  color: #204051;
+}
+
+.contact-me h3 {
+  color: #3b6978;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 8px dotted grey;
+  width: 10%;
+  padding: 20px;
+}
+
+.bottom {
+  background-color: #204051;
+  margin: 20px auto 0;
+  padding: 10px;
+}
+
+.bottom a {
+  padding: 0 30px;
+  color: #cae8d5;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  opacity: 0.6;
+}
+
+.bottom a:hover {
+  color: #f6f6f6;
+  opacity: 1;
+}
+
+.bottom p {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-bottom: 0;
+  color: #f6f6f6;
+  font-size: 0.75rem;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-links {
+  background-color: #cff1ef;
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.top-links .header {
+  font-size: large;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 30px;
+  color: #3b6978;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.6;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.top-links .header:hover {
+  opacity: 1;
+}
+
+.top-links img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=styles.css.map */
