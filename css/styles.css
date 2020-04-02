@@ -1,6 +1,14 @@
 body {
   margin: 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -25,12 +33,11 @@ h3 {
 }
 
 .top {
-  text-align: left;
-  position: relative;
   background-color: #cff1ef;
   height: 100vh;
   padding: 200px 10px;
   padding-bottom: 0;
+  width: 100%;
 }
 
 .top p {
@@ -42,11 +49,11 @@ h3 {
 .top h1, .top p {
   position: relative;
   z-index: 2;
-  width: 50%;
 }
 
 .top img {
   width: 50%;
+  margin-top: 100px;
   position: absolute;
   mix-blend-mode: multiply;
   bottom: 0;
@@ -56,30 +63,22 @@ h3 {
 }
 
 .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .middle .profile {
-  width: 60%;
+  width: 50%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: auto;
-  margin: 100px auto;
-  text-align: left;
+  text-align: center;
 }
 
 .middle .profile img {
-  margin: 10px 100px;
   height: 200px;
   width: 200px;
   border-radius: 100px;
@@ -92,14 +91,17 @@ h3 {
 .middle .profile p {
   font-size: large;
   width: 50%;
+  margin: 20px 50px;
 }
 
 .skills {
-  width: 50%;
+  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills img {
@@ -114,30 +116,20 @@ h3 {
 .skill-row {
   height: auto;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .skill-row h2 {
   width: 100%;
-  margin-left: 50%;
 }
 
 .skill-row h3, .skill-row p {
-  margin-left: 50px;
   color: #3b6978;
-  text-align: left;
-  width: 50%;
   font-size: large;
 }
 
 .contact-me {
   width: 100%;
+  text-align: center;
 }
 
 .contact-me a {
@@ -174,8 +166,9 @@ hr {
 
 .bottom {
   background-color: #204051;
-  margin: 20px auto 0;
+  margin-top: 10px;
   padding: 10px;
+  text-align: center;
 }
 
 .bottom a {
@@ -224,9 +217,6 @@ hr {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   opacity: 0.6;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;

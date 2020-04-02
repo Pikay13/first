@@ -1,6 +1,9 @@
 body{
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 ////////////////TAG SELECTORS////////////////
@@ -30,14 +33,12 @@ h3{
 //////////////////TOP CONTAINER////////////
 
 .top{
-    text-align: left;
-    position: relative;
     background-color: #cff1ef;
     height: 100vh;
     padding: 200px 10px;
     padding-bottom: 0;
-    
-   
+    width: 100%;
+  
     p{
         color: #3b6978;
         font-size: 2rem;
@@ -45,10 +46,10 @@ h3{
     }h1,p{
         position: relative;
         z-index: 2;
-        width: 50%;
       }
     img{
         width: 50%;
+        margin-top: 100px;
         position: absolute;
         mix-blend-mode: multiply;
         bottom: 0;
@@ -62,17 +63,18 @@ h3{
 
 .middle{
    // background-color: #3b6978;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   .profile{
-        width: 60%;
+    margin-top: 40px;
+    width: 100%;
+   
+    align-items: center; 
+       
+.profile{
+        width: 50%;
         display: inline-flex;
-        height: auto;
-        margin: 100px auto;
-        text-align: left;
+
+        text-align: center;
+       
      img{
-        margin: 10px 100px;
         height: 200px;
         width: 200px;
         border-radius: 100px;
@@ -82,15 +84,15 @@ h3{
 p{
     font-size: large;
     width: 50%;
-    
+    margin: 20px 50px;
 }
 }
 }
 
 .skills{
-    width: 50%;
+    width: 100%;
     display: inline-flex;
-    margin: 20px auto;
+    justify-content: center;
     img{ 
         
         height: 200px;
@@ -103,20 +105,13 @@ p{
 .skill-row{
         height: auto;
         width: 50%;
-        display: flex;
-        flex-direction: column;
-       
         h2{
             width: 100%;
-            margin-left: 50%;
-        }
+          }
     h3,p{
-        margin-left: 50px;
         color: #3b6978;
-        text-align: left;
-        width: 50%;
+      
         font-size: large;  
-        
     }
 }
 
@@ -124,6 +119,7 @@ p{
 
 .contact-me{
     width: 100%;
+   text-align: center;
     a{
         border: 1px solid #3b6978 ;
         border-radius: 4px;
@@ -158,8 +154,9 @@ hr{
 
 .bottom{
     background-color:#204051 ;
-    margin: 20px auto 0;
+    margin-top: 10px;
     padding: 10px;
+    text-align: center;
     a{
         padding: 0 30px;
         color: #cae8d5;
@@ -203,7 +200,6 @@ hr{
     padding: 30px;
     color: #3b6978;
     display: inline-flex;
-    align-items: center;
     opacity: 0.6;
     transition-duration: 0.2s;
     }
